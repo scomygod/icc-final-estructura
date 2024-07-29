@@ -36,6 +36,7 @@ public class LaberintoModel {
         return padre;
     }
 
+    // Setter
     public void setPadre(LaberintoModel padre) {
         this.padre = padre;
     }

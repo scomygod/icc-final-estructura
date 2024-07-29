@@ -16,7 +16,7 @@ public class LaberintoController {
         this.vista = vista;
     }
 
-    // Algoritmo BFS para encontrar el camino
+    // Algoritmo BFS 
     public List<LaberintoModel> getPathBFS(boolean[][] laberinto, int inicioX, int inicioY, int finX, int finY) {
         int filas = laberinto.length;
         int columnas = laberinto[0].length;
@@ -46,7 +46,7 @@ public class LaberintoController {
         return Collections.emptyList();
     }
 
-    // Algoritmo DFS para encontrar el camino
+    // Algoritmo DFS 
     public List<LaberintoModel> getPathDFS(boolean[][] laberinto, int inicioX, int inicioY, int finX, int finY) {
         int filas = laberinto.length;
         int columnas = laberinto[0].length;
@@ -76,7 +76,7 @@ public class LaberintoController {
         return Collections.emptyList();
     }
 
-    // Algoritmo recursivo para encontrar el camino
+    // Algoritmo recursivo 
     public List<LaberintoModel> getPathRecursivo(boolean[][] laberinto, int inicioX, int inicioY, int finX, int finY) {
         Set<String> visitados = new HashSet<>();
         List<LaberintoModel> camino = new ArrayList<>();
@@ -110,7 +110,7 @@ public class LaberintoController {
         return false;
     }
 
-    // Algoritmo con caché para encontrar el camino
+    // Algoritmo con Caché
     public List<LaberintoModel> getPathCache(boolean[][] laberinto, int inicioX, int inicioY, int finX, int finY) {
         Set<String> visitados = new HashSet<>();
         Map<String, List<LaberintoModel>> cache = new HashMap<>();
@@ -150,7 +150,7 @@ public class LaberintoController {
         return false;
     }
 
-    // Verifica si una celda es válida para explorar
+    // Verifica si hay como pasar por una celda
     public boolean esValido(int x, int y, int filas, int columnas, boolean[][] laberinto, Set<String> visitados) {
         return x >= 0 && x < filas && y >= 0 && y < columnas && !laberinto[x][y] && !visitados.contains(x + "," + y);
     }

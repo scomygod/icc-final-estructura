@@ -32,7 +32,7 @@ public class LaberintoView extends JFrame {
 
     private void initializeUI() {
         // Configura la ventana principal
-        setTitle("Maze Solver");
+        setTitle("Laberinto Solver");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 700);
         setLayout(new BorderLayout());

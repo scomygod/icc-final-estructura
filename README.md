@@ -1,5 +1,5 @@
 ![image](https://github.com/user-attachments/assets/407ffc52-466e-46c8-8b12-080f514b51e7)
-Informe y Documentación
+Informe y Documentación Versión 1.0.0
 Descripción del Problema
 El problema que se aborda es la resolución de laberintos mediante algoritmos de búsqueda. La tarea consiste en encontrar un camino desde un punto de inicio hasta un punto final en el laberinto, evitando las paredes y seleccionando el mejor algoritmo para la resolución.
 
